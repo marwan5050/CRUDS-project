@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUDS</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- fontasome -->
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+
+    <header>
+        <div class="head-icons">
+            <i class="fa-brands fa-cuttlefish"></i>
+            <i class="fa-solid fa-registered"></i>
+            <i class="fa-brands fa-uniregistry"></i>
+            <i class="fa-brands fa-dyalog"></i>
+            <i class="fa-solid fa-s"></i>
+        </div>
+    </header>
+
+    <div class="header-2 ">
+        <p class="text-center text-capitalize fs-2">product store</p>
+    </div>
+    
+
+
+
+    <section class="crud w-75 mx-auto my-5 p-5 shadow rounded">
+        <div class="inputs-filed">
+
+            <div class="mb-4">
+                <lable for="productName" class="text-capitalize">product Name :</lable>
+                <input type="text" class="form-control my-1" id="productName">
+                <small id="alertName" class="text-capitalize muted  alert alert-danger d-none">name must start with capital and at least 3 chars and not more than 15 chars</small>
+            </div>
+
+            <div class="mb-4" >
+                <lable for="productPrice" class="text-capitalize">product Price :</lable>
+                <input type="number" class="form-control my-1" id="productPrice">
+                <small id="alertPrice" class="text-capitalize muted alert alert-danger d-none">price must not more than 10000</small>
+            </div>
+
+            <div class="mb-4">
+                <lable for="productCategorey" class="text-capitalize">product Categorey :</lable>
+                <input type="text" class="form-control my-1" id="productCategorey">
+                <small id="alertCate" class="text-capitalize muted alert alert-danger d-none">categorey must start with capital and at least 3 chars and not more than 20 chars</small>
+            </div>
+
+            <div>
+                <lable for="productDesc" class="text-capitalize">product Desc :</lable>
+                <textarea type="text" class="form-control my-1" id="productDesc"></textarea>
+                <small id="alertDesc" class="text-capitalize muted alert alert-danger d-none">at least start with 3</small>
+            </div>
+
+            <div id="hiddenAlert" class="d-none text-center text-capitalize alert alert-danger">
+                make sure you filled inputs correctly!
+            </div>
+
+            <div class="buts mt-4">
+
+                <div class="add-btn">
+                    <button type="button" id="add-btn" class="btn btn-success text-white add">Add</button>
+                </div>
+                
+                <div class="del-btn">
+                    <button id="del-btn" class="btn btn-danger text-center d-none delete">Delete All</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <div class="search-input w-75 mx-auto my-5">
+        <lable for="search" class="text-capitalize text-muted" >search by name</lable>
+        <input type="text" class="form-control my-1" id="search">
+    </div>
+
+    <table class="table table-hover custom w-75 mx-auto text-center text-capitalize py-3">
+        <thead class="text-muted">
+            <th>ID</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>categorey</th>
+            <th>Desc</th>
+            <th>Update</th>
+            <th>Delete</th>
+        </thead>
+        <tbody id="table-body">
+
+        </tbody>
+    </table>
+
+
+
+
+
+
+
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+    <script src="./JS/main.js"></script>
+</body>
+</html>

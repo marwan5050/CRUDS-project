@@ -1,0 +1,74 @@
+header{
+    height: 130px;
+    background-color: #2a8a85;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.head-icons i{
+    font-size: 50px;
+    letter-spacing: 10px;
+}
+
+.header-2{
+    background-color: #e2dfdf;
+    color: #2a8a85;
+}
+textarea{
+    resize: none;
+}
+ .buts{
+    display: flex;
+    justify-content: center;
+}
+
+.buts button{
+     /* background-color: #2a8a85;
+    color: #fff; 
+    cursor: pointer; */
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 50px;
+    text-align: center;
+    margin-left: 20px; 
+ } 
+ .buts .add{
+    padding: 10px 30px;
+    transition: all .3s;
+ }
+ .buts .add:hover{
+    background-color: transparent;
+    color: #093c3a !important;
+ }
+
+ .buts .delete{
+    transition: all .3s;
+ }
+ .buts .delete:hover{
+    background-color: transparent;
+    color: #ac2424;
+ }
+ /* .buts .del-btn{
+    padding: 10px 20px;
+ } */
+/* .buts button:hover{
+    
+    color: #2a588a;
+} */
+/* .buts button.add{
+    padding: 20px;
+    background-color: red;
+} */
+/* .buts button.delete{
+    padding: 45px;
+    background-color: blue;
+}  */
+
+@media screen and  (max-width:992px){
+
+    .crud,
+    .custom{
+        width: 100% !important;
+    }
+}
